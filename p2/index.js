@@ -9,4 +9,12 @@ let obj={
 
 const {fullName:{fName}}=obj 
 
-console.log(fName)
+// console.log(fName)
+
+function greet(name){
+    return `Hi ${name}, ${this.title}`
+}
+
+let a1={title:"Verma"}
+
+console.log(greet.call(a1,"Alok"))
