@@ -17,4 +17,24 @@ function greet(name){
 
 let a1={title:"Verma"}
 
-console.log(greet.call(a1,"Alok"))
+// console.log(greet.call(a1,"Alok"))
+
+  // CONSTRUCTURE FUNCTION 
+
+
+  function BankDetails(holderName,balance){
+      this.holderName=holderName,
+      this.accNumber=Date.now(),
+      this.balance=balance
+
+      this.deposit=function (amount){
+        this.balance +=amount
+      }
+  }
+
+  const u1=new BankDetails("Alok",1000)
+  const u2=new BankDetails("verma",2000)
+
+  u1.deposit(3000)
+
+  console.log(u1,u2)
