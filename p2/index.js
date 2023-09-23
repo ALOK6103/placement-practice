@@ -27,14 +27,19 @@ let a1={title:"Verma"}
       this.accNumber=Date.now(),
       this.balance=balance
 
-      this.deposit=function (amount){
-        this.balance +=amount
-      }
+      // this.deposit=function (amount){
+      //   this.balance +=amount
+      // }
+  }
+  
+  BankDetails.prototype.deposit=function (amount){
+    this.balance +=amount
   }
 
   const u1=new BankDetails("Alok",1000)
   const u2=new BankDetails("verma",2000)
 
   u1.deposit(3000)
+  u2.deposit(8000)
 
   console.log(u1,u2)
