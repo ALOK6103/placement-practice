@@ -54,7 +54,8 @@ let a1={title:"Verma"}
 
   Promise.all([
     getpromiseText("hello dear",1000),
-    Promise.resolve("Hi")
+    Promise.resolve("Hi"),
+    // Promise.reject("Rejected")
   ]).then((value)=>{
-    console.log(value)
+    // console.log(value)
   })
