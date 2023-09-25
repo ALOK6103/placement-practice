@@ -42,4 +42,19 @@ let a1={title:"Verma"}
   u1.deposit(3000)
   u2.deposit(8000)
 
-  console.log(u1,u2)
+  // console.log(u1,u2)
+
+  function getpromiseText(text,time){
+    return new Promise((resolve,reject)=>{
+      setTimeout(() => {
+        resolve(text)
+      }, time);
+    })
+  }
+
+  Promise.all([
+    getpromiseText("hello dear",1000),
+    Promise.resolve("Hi")
+  ]).then((value)=>{
+    console.log(value)
+  })
