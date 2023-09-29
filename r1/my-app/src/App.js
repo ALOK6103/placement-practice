@@ -3,6 +3,8 @@ import './App.css';
 import React from "react"
 // import Counter from './components/Counter';
 import Counter from './components/Counterfn';
+import Todo from './Todo/Todo';
+import Timer from './timer/Timer';
 
 class App extends React.Component{
 
@@ -19,6 +21,8 @@ render () {
   return <>
   <button onClick={this.handleClick.bind(this)}>Increase</button>
   <Counter number={this.state.num} />
+  <Todo />
+  <Timer />
   </>
   }
 }
