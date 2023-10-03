@@ -14,7 +14,7 @@ function reverseF(a){
   let x=a.split("")
 
   let z= x.reverse().join("")
-   console.log(z)
+   return z
 }
 
-reverseF("hello")
+console.log(reverseF("hello"))
