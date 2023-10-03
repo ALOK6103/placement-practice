@@ -18,3 +18,16 @@ function reverseF(a){
 }
 
 console.log(reverseF("hello"))
+
+function palindrome(str){
+     
+    let pal=str.split("").reverse().join("")
+
+    if(str===pal){
+        return "Palindrome"
+    }else{
+        return "Not Palindrome"
+    }
+}
+
+console.log(palindrome("naman"))
