@@ -10,3 +10,11 @@ for(let i=0;i<100;i++){
 }
 
 
+function reverseF(a){
+  let x=a.split("")
+
+  let z= x.reverse().join("")
+   console.log(z)
+}
+
+reverseF("hello")
