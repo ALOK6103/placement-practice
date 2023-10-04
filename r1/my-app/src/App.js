@@ -5,6 +5,8 @@ import React from "react"
 import Counter from './components/Counterfn';
 import Todo from './Todo/Todo';
 import Timer from './timer/Timer';
+import Uncontrolled from './uncontrolled/Uncontrolled';
+import Controlled from './controlled/Controlled';
 
 class App extends React.Component{
 
@@ -23,6 +25,8 @@ render () {
   <Counter number={this.state.num} />
   <Todo />
   <Timer />
+  <Uncontrolled />
+  <Controlled/>
   </>
   }
 }
