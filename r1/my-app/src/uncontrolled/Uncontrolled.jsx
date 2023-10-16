@@ -4,7 +4,7 @@ const Uncontrolled = () => {
     const inputRef = useRef(null);
 
     const handleButtonClick = () => {
-      console.log('Input Value:', inputRef.current.value);
+      console.log('Input Value:', +inputRef.current.value);
     };
     
     return (
@@ -17,3 +17,4 @@ const Uncontrolled = () => {
 }
 
 export default Uncontrolled
+

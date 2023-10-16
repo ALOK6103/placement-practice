@@ -7,7 +7,7 @@ import Todo from './Todo/Todo';
 import Timer from './timer/Timer';
 import Uncontrolled from './uncontrolled/Uncontrolled';
 import Controlled from './controlled/Controlled';
-import ExampleComponent from './components/ExampleComponent';
+// import ExampleComponent from './components/ExampleComponent';
 
 class App extends React.Component{
 
@@ -24,11 +24,12 @@ render () {
   return <>
   {/* <button onClick={this.handleClick.bind(this)}>Increase</button> */}
   {/* <Counter number={this.state.num} /> */}
-  <ExampleComponent />
+  {/* <ExampleComponent /> */}
   {/* <Todo />
   <Timer />
+ */}
   <Uncontrolled />
-  <Controlled/> */}
+  <Controlled/> 
   </>
   }
 }
