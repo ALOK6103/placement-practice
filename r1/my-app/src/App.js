@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React from "react"
 // import Counter from './components/Counter';
-import Counter from './components/Counterfn';
+// import Counter from './components/Counterfn';
+import Counter from './counter/counter';
 import Todo from './Todo/Todo';
 import Timer from './timer/Timer';
 import Uncontrolled from './uncontrolled/Uncontrolled';
@@ -28,8 +29,10 @@ render () {
   {/* <Todo />
   <Timer />
  */}
-  <Uncontrolled />
-  <Controlled/> 
+  {/* <Uncontrolled />
+  <Controlled/>  */}
+
+  <Counter />
   </>
   }
 }
