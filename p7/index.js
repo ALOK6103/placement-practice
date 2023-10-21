@@ -90,12 +90,27 @@
 // apply method example
 
 
-let obj={
-    name:"Alok"
+// let obj={
+//     name:"Alok"
+// }
+
+// function sayHello(age,profession){
+//     return "Hello"+" "+this.name+"is"+age+" "+profession
+// }
+
+// console.log(sayHello.apply(obj,[24,"developer"]));
+
+
+// curriying example 
+
+function curriying(a){
+  
+    return function (b){
+        return function(c){
+            // console.log(a+b+c)
+           return a+b+c
+        }
+    }
 }
 
-function sayHello(age,profession){
-    return "Hello"+" "+this.name+"is"+age+" "+profession
-}
-
-console.log(sayHello.apply(obj,[24,"developer"]));
+console.log(curriying(2)(3)(4))
