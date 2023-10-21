@@ -75,12 +75,27 @@
 // Call method example
 
 
+// let obj={
+//     name:"Alok"
+// }
+
+// function sayHello(age){
+//     return "Hello"+this.name+"is"+age
+// }
+
+// console.log(sayHello.call(obj,24));
+
+
+
+// apply method example
+
+
 let obj={
     name:"Alok"
 }
 
-function sayHello(age){
-    return "Hello"+this.name+"is"+age
+function sayHello(age,profession){
+    return "Hello"+" "+this.name+"is"+age+" "+profession
 }
 
-console.log(sayHello.call(obj,24));
+console.log(sayHello.apply(obj,[24,"developer"]));
